@@ -13,6 +13,16 @@
 		BBEE1373285A326C004C7F37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEE1372285A326C004C7F37 /* Preview Assets.xcassets */; };
 		BBEE1376285A326C004C7F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEE1374285A326C004C7F37 /* Main.storyboard */; };
 		BBEE1380285A33EC004C7F37 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEE137F285A33EC004C7F37 /* StatusBarController.swift */; };
+		FC170BC7285A7E6B007502C4 /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BC2285A7E6B007502C4 /* ScreenRecorder.swift */; };
+		FC170BC8285A7E6B007502C4 /* PowerMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BC3285A7E6B007502C4 /* PowerMeter.swift */; };
+		FC170BC9285A7E6B007502C4 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = FC170BC4285A7E6B007502C4 /* Audio */; };
+		FC170BCA285A7E6B007502C4 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BC5285A7E6B007502C4 /* AudioPlayer.swift */; };
+		FC170BCB285A7E6B007502C4 /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BC6285A7E6B007502C4 /* CaptureEngine.swift */; };
+		FC170BD1285A7EBC007502C4 /* CapturePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BD0285A7EBC007502C4 /* CapturePreview.swift */; };
+		FC170BD2285A7EBC007502C4 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BCF285A7EBC007502C4 /* ConfigurationView.swift */; };
+		FC170BD3285A7EBC007502C4 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BCE285A7EBC007502C4 /* MaterialView.swift */; };
+		FC170BD5285A7FFA007502C4 /* AudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC170BD4285A7FFA007502C4 /* AudioLevelsView.swift */; };
+		FC170BD8285A8208007502C4 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = FC170BD7285A81F8007502C4 /* Synth.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +35,16 @@
 		BBEE1377285A326C004C7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBEE1378285A326C004C7F37 /* TrayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrayApp.entitlements; sourceTree = "<group>"; };
 		BBEE137F285A33EC004C7F37 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		FC170BC2285A7E6B007502C4 /* ScreenRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
+		FC170BC3285A7E6B007502C4 /* PowerMeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerMeter.swift; sourceTree = "<group>"; };
+		FC170BC4285A7E6B007502C4 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		FC170BC5285A7E6B007502C4 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		FC170BC6285A7E6B007502C4 /* CaptureEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
+		FC170BCE285A7EBC007502C4 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		FC170BCF285A7EBC007502C4 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		FC170BD0285A7EBC007502C4 /* CapturePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePreview.swift; sourceTree = "<group>"; };
+		FC170BD4285A7FFA007502C4 /* AudioLevelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLevelsView.swift; sourceTree = "<group>"; };
+		FC170BD7285A81F8007502C4 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,9 @@
 		BBEE136A285A3264004C7F37 /* TrayApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC170BD0285A7EBC007502C4 /* CapturePreview.swift */,
+				FC170BCF285A7EBC007502C4 /* ConfigurationView.swift */,
+				FC170BCE285A7EBC007502C4 /* MaterialView.swift */,
 				BBEE136B285A3264004C7F37 /* AppDelegate.swift */,
 				BBEE136D285A3264004C7F37 /* ContentView.swift */,
 				BBEE136F285A326C004C7F37 /* Assets.xcassets */,
@@ -65,6 +88,13 @@
 				BBEE1378285A326C004C7F37 /* TrayApp.entitlements */,
 				BBEE1371285A326C004C7F37 /* Preview Content */,
 				BBEE137F285A33EC004C7F37 /* StatusBarController.swift */,
+				FC170BC4285A7E6B007502C4 /* Audio */,
+				FC170BC5285A7E6B007502C4 /* AudioPlayer.swift */,
+				FC170BD4285A7FFA007502C4 /* AudioLevelsView.swift */,
+				FC170BC6285A7E6B007502C4 /* CaptureEngine.swift */,
+				FC170BC3285A7E6B007502C4 /* PowerMeter.swift */,
+				FC170BC2285A7E6B007502C4 /* ScreenRecorder.swift */,
+				FC170BD7285A81F8007502C4 /* Synth.aif */,
 			);
 			path = TrayApp;
 			sourceTree = "<group>";
@@ -135,9 +165,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC170BD8285A8208007502C4 /* Synth.aif in Resources */,
 				BBEE1376285A326C004C7F37 /* Main.storyboard in Resources */,
 				BBEE1373285A326C004C7F37 /* Preview Assets.xcassets in Resources */,
 				BBEE1370285A326C004C7F37 /* Assets.xcassets in Resources */,
+				FC170BC9285A7E6B007502C4 /* Audio in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC170BCB285A7E6B007502C4 /* CaptureEngine.swift in Sources */,
+				FC170BD2285A7EBC007502C4 /* ConfigurationView.swift in Sources */,
 				BBEE136E285A3264004C7F37 /* ContentView.swift in Sources */,
+				FC170BC7285A7E6B007502C4 /* ScreenRecorder.swift in Sources */,
+				FC170BD5285A7FFA007502C4 /* AudioLevelsView.swift in Sources */,
 				BBEE1380285A33EC004C7F37 /* StatusBarController.swift in Sources */,
+				FC170BC8285A7E6B007502C4 /* PowerMeter.swift in Sources */,
+				FC170BD1285A7EBC007502C4 /* CapturePreview.swift in Sources */,
+				FC170BD3285A7EBC007502C4 /* MaterialView.swift in Sources */,
 				BBEE136C285A3264004C7F37 /* AppDelegate.swift in Sources */,
+				FC170BCA285A7E6B007502C4 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -298,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.foo.bar.TrayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -320,7 +360,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.foo.bar.TrayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

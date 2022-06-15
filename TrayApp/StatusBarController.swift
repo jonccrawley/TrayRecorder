@@ -1,5 +1,5 @@
 //
-//  StatusBarController.swift
+//  AppDelegate.swift
 //  TrayApp
 //
 //  Created by Jon Crawley on 6/15/22.
