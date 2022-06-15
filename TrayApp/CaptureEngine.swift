@@ -51,7 +51,7 @@ class CaptureEngine: NSObject, @unchecked Sendable {
                 
                 // Add a stream output to capture screen content.
                 try stream?.addStreamOutput(streamOutput, type: .screen, sampleHandlerQueue: videoSampleBufferQueue)
-                //JCC try stream?.addStreamOutput(streamOutput, type: .audio, sampleHandlerQueue: audioSampleBufferQueue)
+                try stream?.addStreamOutput(streamOutput, type: .audio, sampleHandlerQueue: audioSampleBufferQueue)
                 stream?.startCapture()
             } catch {
                 continuation.finish(throwing: error)
@@ -105,10 +105,10 @@ private class CaptureEngineStreamOutput: NSObject, SCStreamOutput, SCStreamDeleg
             // Create a CapturedFrame structure for a video sample buffer.
             guard let frame = createFrame(for: sampleBuffer) else { return }
             capturedFrameHandler?(frame)
-            //JCC       case .audio:
+        case .audio:
             // Create an AVAudioPCMBuffer from an audio sample buffer.
-           // guard let samples = createPCMBuffer(for: sampleBuffer) else { return }
-            //pcmBufferHandler?(samples)
+            guard let samples = createPCMBuffer(for: sampleBuffer) else { return }
+            pcmBufferHandler?(samples)
         @unknown default:
             fatalError("Encountered unknown stream output type: \(outputType)")
         }

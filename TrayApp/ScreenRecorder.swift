@@ -204,8 +204,8 @@ class ScreenRecorder: ObservableObject {
         let streamConfig = SCStreamConfiguration()
         
         // Configure audio capture.
-        //JCC streamConfig.capturesAudio = isAudioCaptureEnabled
-        //JCC streamConfig.excludesCurrentProcessAudio = isAppAudioExcluded
+        streamConfig.capturesAudio = isAudioCaptureEnabled
+        streamConfig.excludesCurrentProcessAudio = isAppAudioExcluded
         
         // Configure the display content width and height.
         if captureType == .display, let display = selectedDisplay {
