@@ -12,6 +12,7 @@
 		BBEE1370285A326C004C7F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEE136F285A326C004C7F37 /* Assets.xcassets */; };
 		BBEE1373285A326C004C7F37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBEE1372285A326C004C7F37 /* Preview Assets.xcassets */; };
 		BBEE1376285A326C004C7F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEE1374285A326C004C7F37 /* Main.storyboard */; };
+		BBEE1380285A33EC004C7F37 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEE137F285A33EC004C7F37 /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		BBEE1375285A326C004C7F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBEE1377285A326C004C7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBEE1378285A326C004C7F37 /* TrayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrayApp.entitlements; sourceTree = "<group>"; };
+		BBEE137F285A33EC004C7F37 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,11 @@
 				BBEE1377285A326C004C7F37 /* Info.plist */,
 				BBEE1378285A326C004C7F37 /* TrayApp.entitlements */,
 				BBEE1371285A326C004C7F37 /* Preview Content */,
+				BBEE137F285A33EC004C7F37 /* StatusBarController.swift */,
 			);
 			path = TrayApp;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		BBEE1371285A326C004C7F37 /* Preview Content */ = {
 			isa = PBXGroup;
@@ -145,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBEE136E285A3264004C7F37 /* ContentView.swift in Sources */,
+				BBEE1380285A33EC004C7F37 /* StatusBarController.swift in Sources */,
 				BBEE136C285A3264004C7F37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
